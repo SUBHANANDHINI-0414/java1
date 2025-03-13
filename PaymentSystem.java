@@ -14,7 +14,7 @@ class CreditCardPayment implements PaymentGateway {
 class PayPalPayment implements PaymentGateway {
     @Override
     public void processPayment(double amount) {
-        System.out.println("Processing PayPal payment of $" + amount);
+        System.out.println("Processing PayPal payment of " + amount);
     
     }
 }
@@ -62,8 +62,6 @@ public class PaymentSystem {
 
         payment.processPayment(amount);
         System.out.println("Payment successful!");
-
-        scanner.close();
     }
 }
 
